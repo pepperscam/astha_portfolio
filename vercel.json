@@ -2,5 +2,5 @@
   "buildCommand": "pnpm run build",
   "installCommand": "pnpm install",
   "outputDirectory": "public",
-  "framework": "vite"
+  "framework": null
 }
