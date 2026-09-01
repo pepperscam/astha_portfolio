@@ -1,6 +1,6 @@
 {
   "buildCommand": "pnpm run build",
   "installCommand": "pnpm install",
-  "outputDirectory": "artifacts/portfolio/dist/public",
+  "outputDirectory": "public",
   "framework": "vite"
 }
