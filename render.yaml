@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: portfolio-api
+    env: node
+    region: oregon
+    buildCommand: pnpm install && pnpm --filter @workspace/api-server run build
+    startCommand: pnpm --filter @workspace/api-server run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+    autoDeploy: true
+
+  - type: web
+    name: portfolio-frontend
+    env: static
+    region: oregon
+    buildCommand: pnpm install && pnpm --filter @workspace/portfolio run build
+    staticPublishPath: artifacts/portfolio/dist/public
+    autoDeploy: true
