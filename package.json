@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "pnpm --filter @workspace/portfolio run dev",
-    "build": "pnpm --filter @workspace/portfolio run build && node scripts/sync-build.mjs",
+    "build": "pnpm --filter @workspace/portfolio run build",
     "typecheck:libs": "tsc --build",
     "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./scripts\" --if-present run typecheck"
   },
