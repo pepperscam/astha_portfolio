@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@9.15.4",
   "engines": {
     "node": ">=20.0.0"
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node -e \"const fs=require('fs'); fs.cpSync('dist', 'public', {recursive: true, force: true});\"",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
